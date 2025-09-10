@@ -1,0 +1,8 @@
+C:\ProyectosC#\slnAdivinanza\adivinaElNumero\bin\Debug\adivinaElNumero.exe.config
+C:\ProyectosC#\slnAdivinanza\adivinaElNumero\bin\Debug\adivinaElNumero.exe
+C:\ProyectosC#\slnAdivinanza\adivinaElNumero\bin\Debug\adivinaElNumero.pdb
+C:\ProyectosC#\slnAdivinanza\adivinaElNumero\obj\Debug\adivinaElNumero.csproj.AssemblyReference.cache
+C:\ProyectosC#\slnAdivinanza\adivinaElNumero\obj\Debug\adivinaElNumero.csproj.CoreCompileInputs.cache
+C:\ProyectosC#\slnAdivinanza\adivinaElNumero\obj\Debug\adivinaElNumero.exe
+C:\ProyectosC#\slnAdivinanza\adivinaElNumero\obj\Debug\adivinaElNumero.pdb
+C:\ProyectosC#\slnAdivinanza\adivinaElNumero\obj\Debug\adivinaElNumero.exe.config
