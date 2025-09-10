@@ -45,6 +45,8 @@ namespace adivinaElNumero
 
             if (er >= 1) 
                 Console.WriteLine($"Te equivocaste {er} veces");
+            Console.WriteLine("Presione cualquier tecla para salir");
+            Console.ReadLine();
 
         }
     }
