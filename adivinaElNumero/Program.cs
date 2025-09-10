@@ -10,41 +10,44 @@ namespace adivinaElNumero
     {
         static void Main(string[] args)
         {
-            int er = 0;
-            Random rnd = new Random();
-            int numAlt=rnd.Next(1,101);
-            //se genera el numero aleatorio entre uno y cien, el limite que es ciento uno no cuenta
+            int er = 0, intento = 0;
+            Random rnd = new Random(); //se crea el obj random name: rnd
+            int numAlt=rnd.Next(1,101);//se genera el numero aleatorio entre uno y cien, el limite que es ciento uno no cuenta
             Console.WriteLine("======<Hola mundo>======");
             Console.WriteLine("A continuacion haremos un divertido juego\nadivina el numero entre 1 y 100");
-            int intento=Int32.Parse(Console.ReadLine());
-
-            
-
             /* uso de bucle indefinido while porque no sabemos cuantos 
              * intentos hara el usuario*/
 
             while ( numAlt!= intento)
             {
-                Console.WriteLine("Incorrecto");
+                try
+                {
+                    intento = Int32.Parse(Console.ReadLine());
+                }
+                catch (FormatException e)
+                {
+                    Console.WriteLine("Ingresaste una letra, no un numero");
+                    Console.WriteLine("Se iniciara el valor en 0");
+                    intento = 0;
+                }
+                catch (OverflowException e)
+                {
+                    Console.WriteLine("El numero es demaciado grande");
+                    Console.WriteLine("Se iniciara el valor en 0");
+                    intento = 0;
+                }
+
                 if (numAlt < intento)
-                {
                     Console.WriteLine("El numero que buscas es menor");
-                    Console.WriteLine("Intente con otro numero");
-                    intento=int.Parse(Console.ReadLine());
-                }
+
                 else if (numAlt > intento)
-                {
                     Console.WriteLine("El numero que buscas es mayor");
-                    Console.WriteLine("Intente con otro numero");
-                    intento = int.Parse(Console.ReadLine());
-                }
+
                 er++;
             }
 
-            Console.WriteLine($"\nCorrecto!!! El numeor que buscabas era {numAlt}");
+            Console.WriteLine($"\nCorrecto!!! El numeor que buscabas era {numAlt}, te tomaste {er} intentos");
 
-            if (er >= 1) 
-                Console.WriteLine($"Te equivocaste {er} veces");
             Console.WriteLine("Presione cualquier tecla para salir");
             Console.ReadLine();
 
