@@ -47,10 +47,8 @@ namespace adivinaElNumero
             }
 
             Console.WriteLine($"\nCorrecto!!! El numeor que buscabas era {numAlt}, te tomaste {er} intentos");
-
             Console.WriteLine("Presione cualquier tecla para salir");
             Console.ReadLine();
-
         }
     }
 }
